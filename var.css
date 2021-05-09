@@ -1,0 +1,15 @@
+:root{
+    --red: #F94144;
+    --dark-orange: #F3722C;
+    --light-orange: #F8961E;
+    --yellow: #F9C74F;
+    --green: #90BE6D;
+    --light-blue: #43AA8B;
+    --dark-blue: #577590;
+
+    --background-contrast: rgba(9, 8, 8, 0.88);
+    --turn-border: 2px solid red;
+    --font-default: 'Roboto', sans-serif;
+
+    --margin: 3%;
+}

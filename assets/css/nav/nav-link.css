@@ -1,0 +1,12 @@
+.nav__link{
+    color: var(--nav);
+    text-decoration: none;
+    margin-right: 1.25rem;
+}
+
+.nav__link:hover{
+    font-weight: bold;
+}
+.nav__link.active{
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+.nav__item{
+    list-style: none;
+}
+.nav__item:last-child .nav__link{
+    margin-right: 0;
+}

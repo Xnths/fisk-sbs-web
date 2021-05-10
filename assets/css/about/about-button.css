@@ -1,0 +1,15 @@
+.about__button{
+    text-decoration: none;
+    color: var(--font);
+    padding: 0.75rem 4rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    border-bottom: var(--contrast-border);
+    background-color: var(--red);
+    transform: translate(-50%, -50%);
+}
+.about__button:active{
+    top: 82%;
+    opacity: 0.8;
+}

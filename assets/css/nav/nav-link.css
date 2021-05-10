@@ -1,5 +1,5 @@
 .nav__link{
-    color: var(--nav);
+    color: var(--font);
     text-decoration: none;
     margin-right: 1.25rem;
 }

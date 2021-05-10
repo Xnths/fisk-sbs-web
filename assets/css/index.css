@@ -2,9 +2,11 @@
 @import url('./var.css');
 
 @import url('./body.css');
+@import url('./title.css');
 
 @import url('./header.css');
 @import url('./logo.css');
 
 @import url('./nav/index.css');
 @import url('./about/index.css');
+@import url('./benefits/index.css');

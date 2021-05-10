@@ -1,3 +1,6 @@
 .header__logo{
     width: var(--logo-size);
 }
+.footer__logo{
+    width:var(--logo-size);
+}

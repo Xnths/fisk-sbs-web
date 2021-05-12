@@ -1,0 +1,9 @@
+.staff__card{
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    width: calc(30% - 1rem);
+}

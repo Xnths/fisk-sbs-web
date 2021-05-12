@@ -2,8 +2,14 @@
     background-color: var(--red);
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
+    width: calc(30.5% - 1rem);
     padding: 1rem;
-    width: calc(30% - 1rem);
+}
+@media screen and (max-width: 768px){
+   .staff__card{
+       width: calc(100% - 1rem);
+   }
 }

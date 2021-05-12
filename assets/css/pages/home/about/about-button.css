@@ -9,12 +9,10 @@
     top: 80%;
     transform: translate(-50%, -50%);
     transition: background-color 500ms;
-    transition: opacity 500ms;
 }
 .about__button:hover{
-    background-color: #c9000d;
-    border-bottom: 2px solid rgb(143, 0, 0);
-    opacity: 0.9;
+    background-color: #f72836;
+    border-bottom: 2px solid rgb(250, 12, 12);
 }
 .about__button:active{
     opacity: 0.8;

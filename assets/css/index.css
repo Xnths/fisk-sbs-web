@@ -1,17 +1,7 @@
-@import url("./reset.css");
-@import url('./var.css');
+@import url('./base/index.css');
 
-@import url('./body.css');
-@import url('./title.css');
-@import url('./container.css');
+@import url('./components/index.css');
 
-@import url('./header.css');
-@import url('./logo.css');
-@import url('./find-us.css');
+@import url('./layout/index.css');
 
-@import url('./nav/index.css');
-@import url('./about/index.css');
-@import url('./benefits/index.css');
-@import url('./institutional/index.css');
-@import url('./footer/index.css');
-@import url('./staff/index.css');
+@import url('./pages/index.css');

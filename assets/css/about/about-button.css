@@ -1,15 +1,15 @@
 .about__button{
-    text-decoration: none;
+    background-color: var(--red);
+    border-bottom: var(--contrast-border);
     color: var(--font);
+    left: 50%;
     padding: 0.75rem 4rem;
     position: absolute;
+    text-decoration: none;
     top: 80%;
-    left: 50%;
-    border-bottom: var(--contrast-border);
-    background-color: var(--red);
     transform: translate(-50%, -50%);
-    transition: opacity 500ms;
     transition: background-color 500ms;
+    transition: opacity 500ms;
 }
 .about__button:hover{
     background-color: #c9000d;
@@ -17,6 +17,6 @@
     opacity: 0.9;
 }
 .about__button:active{
-    top: 81%;
     opacity: 0.8;
+    top: 81%;
 }

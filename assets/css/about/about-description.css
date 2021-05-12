@@ -2,8 +2,8 @@
     font-size: 1rem;
     position: absolute;
     left: 50%;
-    top: 50%;
     text-align: center;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
 }

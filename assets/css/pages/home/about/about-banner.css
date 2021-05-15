@@ -4,6 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - var(--logo-size));
-    opacity: 0.4;
+    opacity: 0.15;
     width: 100%;
 }

@@ -50,16 +50,15 @@
             <label class="post__title-lbl" for='title'>Title:</label><br>
             <input type="text" class="post__title-input" id="title" name='title'><br>
             <label for="message" class="post__author-lbl">Message:</label><br>
-            <textarea class='post__message-input' id='message' name='message'
-                rows='2'>Type the message you want to stick in the bulletin board</textarea><br>
+            <textarea class='post__message-input' id='message' name='message' rows='2'
+                placeholder="Type the message you want to pin in the board..."></textarea><br>
             <label for="author" class="post__message-lbl">Author:</label><br>
             <input type="text" class="post__message-input" id='author' name='author'><br>
             <input type='submit' class="post__submit" value='Post' id='post'></input>
         </section>
         <section class="bulletin-board">
             <h2 class="bulletin-board__title">Bulletin Board</h2>
-            <ul class="bulletin-board__notes" id="notes">
-                <p class='bulletin-board__warn'>There is nothing here so far.</p>
+            <ul class="bulletin-board__board" id="bulletin-board">
             </ul>
         </section>
     </main>

@@ -20,9 +20,7 @@
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link active">Galery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Find us</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Intitutional</a></li>
+                <li class="nav__item"><a href="#" class="nav__link active">Highlights</a></li>
             </ul>
         </nav>
     </header>
@@ -47,19 +45,22 @@
                 <p class="photos__description box">Saint Patrick's Day</p>
             </div>
         </section>
-        <section class="activities">
-            activities
-            <img src="" alt="" class="activities__img">
-            <img src="" alt="" class="activities__img">
-            <img src="" alt="" class="activities__img">
-            <img src="" alt="" class="activities__img">
+        <section class="post">
+            <h2 class="post__title"></h2>
+            <label class="post__title-lbl" for='title'>Title:</label><br>
+            <input type="text" class="post__title-input" id="title" name='title'><br>
+            <label for="message" class="post__message-lbl">Message:</label><br>
+            <input type="text" class="post__message-input" id='message' name='message'><br>
+            <label for="author" class="post__author-lbl">Author:</label><br>
+            <textarea class='post__message-input' id='author' name='author'
+                rows='2'>Type the message you want to stick in the bulletin board</textarea><br>
+            <input type='submit' class="post__submit" value='Post' id='post'></input>
         </section>
-        <section class="staff-photos">
-            staff-photos
-            <img src="" alt="" class="staff-photos__img">
-            <img src="" alt="" class="staff-photos__img">
-            <img src="" alt="" class="staff-photos__img">
-            <img src="" alt="" class="staff-photos__img">
+        <section class="bulletin-board">
+            <h2 class="bulletin-board__title">Bulletin Board</h2>
+            <ul class="bulletin-board__notes" id="notes">
+                <p class='bulletin-board__warn'>There is nothing here so far.</p>
+            </ul>
         </section>
     </main>
     <footer class="footer">
@@ -71,9 +72,7 @@
         <nav class="footer__nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link active">Galery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Find us</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Institutional</a></li>
+                <li class="nav__item"><a href="#" class="nav__link active">Hightlights</a></li>
             </ul>
         </nav>
     </footer>

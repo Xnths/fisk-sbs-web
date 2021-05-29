@@ -10,6 +10,12 @@ class Service {
         `
         return query(sql, params);
     }
+    async findAll() {
+        const sql = `
+            SELECT * FROM ${this._modelName}
+        `
+        return query(sql);
+    }
 }
 
 module.exports = Service;

@@ -14,6 +14,16 @@ class BulletinBoardController {
             next(error);
         }
     }
+    static async findAll(req, res, next) {
+        try {
+            const notes = await bulletinBoardService.findAll();
+
+            res.status(200).json(notes);
+            next();
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 module.exports = BulletinBoardController;

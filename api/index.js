@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const { connection } = require('./database')
 const { tables } = require('./database');
 const { bulletinboard } = require('./routes');
+const cors = require('cors');
 
 connection.connect(async (error) => {
     if (error) {
@@ -13,8 +14,9 @@ connection.connect(async (error) => {
     } else {
         await tables.init();
 
+        app.use(cors());
         app.use(bodyParser.json());
-        app.use(bodyParser.urlencoded({ extended: true }))
+        app.use(bodyParser.text('application/text'))
 
         app.use('/api', bulletinboard)
 

@@ -5,8 +5,9 @@ class BulletinBoardController {
     static async insert(req, res, next) {
         try {
             const body = req.body;
+            const data = JSON.parse(body);
 
-            await bulletinBoardService.insert(body);
+            await bulletinBoardService.insert(data);
 
             res.status(201).json(body);
             next();

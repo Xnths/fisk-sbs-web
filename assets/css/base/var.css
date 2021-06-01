@@ -1,6 +1,8 @@
 :root{
     --header: #F94144;
     --font: #fff;
+    --red-contrast: #fd4c4c;
+    --gray: rgb(176, 173, 173);
 
     --red: #F94144;
     --dark-orange: #F3722C;
@@ -11,7 +13,7 @@
     --dark-blue: #577590;
 
     --background-contrast: rgba(9,8,8,0.88);
-    --contrast-border: 2px solid red;
+    --contrast-border: 2px solid rgb(249, 36, 36);
     --font-default: 'Roboto', sans-serif;
 
     --logo-size: 6rem;

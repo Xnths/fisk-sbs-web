@@ -1,0 +1,4 @@
+.bulletin-board__item-action{
+    text-decoration: none;
+    color: var(--font);
+}

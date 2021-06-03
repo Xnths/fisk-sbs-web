@@ -50,12 +50,12 @@
             <h2 class="post__title">Post</h2>
             <form class="post__form">
                 <label class="post__title-lbl" for='title'>Title:</label><br>
-                <input type="text" class="post__title-input input" id="title" name='title' required><br>
+                <input type="text" class="post__title-input input" name='title' required data-title><br>
                 <label for="message" class="post__author-lbl">Message:</label><br>
                 <textarea class='post__message-input input' id='message' name='message' rows='2'
-                    placeholder="Type the message you want to pin in the board..." required></textarea><br>
+                    placeholder="Type the message you want to pin in the board..." required data-message></textarea><br>
                 <label for="author" class="post__message-lbl">Author:</label><br>
-                <input type="text" class="post__author-input input" id='author' name='author' required><br>
+                <input type="text" class="post__author-input input" id='author' name='author' required data-author><br>
                 <input type='submit' class="post__submit button" value='Post' id='post'></input>
             </form>
         </section>

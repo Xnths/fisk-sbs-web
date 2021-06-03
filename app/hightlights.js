@@ -32,7 +32,7 @@ function dateFormat(date) {
 function createNotes(notes) {
     bulletinBoard.innerHTML = "";
 
-    if (!notes.length > 0) bulletinBoard.innerHTML = "<p class='bulletin-board__empty'>There is no notes</p>";
+    if (!notes.length > 0) bulletinBoard.innerHTML = "<p class='bulletin-board__board-empty'>There are no notes</p>";
 
     notes.forEach(note => {
         const div = document.createElement("div");
@@ -44,8 +44,8 @@ function createNotes(notes) {
             <p class="bulletin-board__item-author">${note.author}</p>
             <p class="bulletin-board__item-createdAt">${dateFormat(note.createdAt)}</p>
             <p class="bulletin-board__item-options">
-                <a class="bulletin-board__item-action bulletin-board__item-edit" href="#">Edit</a>
-                <a class="bulletin-board__item-action bulletin-board__item-delete" href="#">Delete</a>
+                <button class="bulletin-board__item-action bulletin-board__item-edit">Edit</button> | 
+                <button class="bulletin-board__item-action bulletin-board__item-delete">Delete</button>
             </p>
         `
 

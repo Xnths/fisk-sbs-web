@@ -24,6 +24,18 @@ class BulletinBoardController {
             next(error);
         }
     }
+    static async delete(req, res, next) {
+        try {
+            const { id } = req.params;
+
+            await bulletinBoardService.delete(id);
+
+            res.status(200).end();
+            next();
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 module.exports = BulletinBoardController;

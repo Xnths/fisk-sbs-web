@@ -6,5 +6,8 @@ router
     .route('/bulletinboard')
     .get(BulletinBoardController.findAll)
     .post(BulletinBoardController.insert);
+router
+    .route('/bulletinboard/:id')
+    .delete(BulletinBoardController.delete);
 
 module.exports = router;

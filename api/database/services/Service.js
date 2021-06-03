@@ -11,10 +11,12 @@ class Service {
         return query(sql, params);
     }
     async findAll() {
-        const sql = `
-            SELECT * FROM ${this._modelName}
-        `
+        const sql = `SELECT * FROM ${this._modelName}`
         return query(sql);
+    }
+    async delete(id) {
+        const sql = `DELETE FROM ${this._modelName} WHERE id=?`
+        return query(sql, id);
     }
 }
 

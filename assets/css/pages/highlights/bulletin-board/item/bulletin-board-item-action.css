@@ -1,8 +1,10 @@
 .bulletin-board__item-action{
-    text-decoration: none;
-    color: var(--font);
-    border: none;
     background: none;
+    border: none;
+    color: var(--font);
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
 }
 .bulletin-board__item-action:hover{
     cursor: pointer;

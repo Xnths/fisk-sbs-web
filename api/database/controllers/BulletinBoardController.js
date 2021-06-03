@@ -36,6 +36,31 @@ class BulletinBoardController {
             next(error);
         }
     }
+    static async findOneById(req, res, next) {
+        try {
+            const { id } = req.params;
+
+            const note = await bulletinBoardService.findOneById(id);
+
+            res.status(200).json(note);
+            next();
+        } catch (error) {
+            next(error);
+        }
+    }
+    static async update(req, res, next) {
+        try {
+            const { id } = req.params;
+            const data = req.body;
+
+            await bulletinBoardService.update(data, id);
+
+            res.status(200).end();
+            next();
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 module.exports = BulletinBoardController;

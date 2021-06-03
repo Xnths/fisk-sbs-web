@@ -44,7 +44,7 @@ function createNotes(notes) {
             <p class="bulletin-board__item-author">${note.author}</p>
             <p class="bulletin-board__item-createdAt">${dateFormat(note.createdAt)}</p>
             <p class="bulletin-board__item-options">
-                <button class="bulletin-board__item-action bulletin-board__item-edit">Edit</button> | 
+                <a class="bulletin-board__item-action bulletin-board__item-edit" href="./edit.html?id=${note.id}">Edit</a> | 
                 <button class="bulletin-board__item-action bulletin-board__item-delete">Delete</button>
             </p>
         `

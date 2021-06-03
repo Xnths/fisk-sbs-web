@@ -8,6 +8,8 @@ router
     .post(BulletinBoardController.insert);
 router
     .route('/bulletinboard/:id')
+    .get(BulletinBoardController.findOneById)
+    .put(BulletinBoardController.update)
     .delete(BulletinBoardController.delete);
 
 module.exports = router;

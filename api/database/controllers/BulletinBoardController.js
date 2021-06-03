@@ -4,12 +4,11 @@ const bulletinBoardService = new BulletinBoardService();
 class BulletinBoardController {
     static async insert(req, res, next) {
         try {
-            const body = req.body;
-            const data = JSON.parse(body);
+            const data = req.body;
 
             await bulletinBoardService.insert(data);
 
-            res.status(201).json(body);
+            res.status(201).json(data);
             next();
         } catch (error) {
             next(error);

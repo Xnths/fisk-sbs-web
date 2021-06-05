@@ -27,12 +27,61 @@
     </header>
     <main>
         <form class="enroll">
-            <label for="email" class="enroll__email">Email:</label><br>
-            <input type="text" class="enroll__email-input input" data-email required><br>
-            <label for="password" class="enroll__password">Password:</label><br>
-            <input type="password" class="enroll__password-input input" data-password required><br>
-            <div class="enroll__submit-box">
-                <input type="submit" value="Login" class="enroll__submit button" data-input>
+            <div class="enroll__name-container input-container">
+                <label for="name" class="enroll__name">Name:</label><br>
+                <input type="text" class="enroll__name-input input" placeholder="Full name" data-type="name"
+                    pattern="^(?=[A-Z]).+ (?=[A-Z]).{3,}" required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__birthday-container input-container">
+                <label for="birthday" class="enroll__birthday">Birthday:</label>
+                <input type="date" class="enroll__birthday-input input" data-type="birthday" required>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__email-container input-container">
+                <label for="email" class="enroll__email">Email:</label><br>
+                <input type="email" class="enroll__email-input input" data-type="email" placeholder="email@email.com"
+                    data-email required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__password-container input-container">
+                <label for="password" class="enroll__password">Password:</label><br>
+                <input type="password" class="enroll__password-input input" data-type="password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d+).{6,12}$" required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__confirm-password-container input-container">
+                <label for="confirm-password" class="enroll__confirm-password">Confirm Password:</label>
+                <input type="password" class="enroll__confirm-password-input input" data-type="confirmPassword"
+                    required>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__cellphone-container input-container">
+                <label for="cellphone" class="enroll__cellphone">Cell phone:</label><br>
+                <input type="number" class="enroll__cellphone-input input" data-type="cellphone"
+                    placeholder="(xx) xxxxx-xxxx" required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__CEP-container input-container">
+                <label for="CEP" class="enroll__CEP">CEP:</label><br>
+                <input type="number" class="enroll__CEP-input input" data-type="CEP" placeholder="xxxxxx-xxx"
+                    required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__city-container input-container">
+                <label for="city" class="enroll__city">City:</label><br>
+                <input type="text" class="enroll__city-input input" data-type="city" placeholder="Ex.: São Paulo"
+                    required><br>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__neighborhood-container input-container">
+                <label for="neighborhood" class="enroll__neighborhood">Neighborhood:</label><br>
+                <input type="text" class="enroll__neighborhood-input input" data-type="neighborhood"
+                    placeholder="Ex.: Avenida Pualista" required>
+                <span class="enroll__error-message"></span>
+            </div>
+            <div class="enroll__submit-container">
+                <input type="submit" value="Login" class="enroll__submit button">
                 <div class="loader"></div>
             </div>
         </form>
@@ -49,7 +98,7 @@
         <ul class="nav__list">
             <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link active">Hightlights</a></li>
-            <li class="nav__item"><a href="./enroll.html" class="nav__link">Login</a></li>
+            <li class="nav__item"><a href="./login.html" class="nav__link">Login</a></li>
         </ul>
     </nav>
 </footer>
